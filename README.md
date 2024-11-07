@@ -1,2 +1,8 @@
 # email-external-ip
-Send an email with external IP
+
+Simple code to send an email with your external IP
+
+Build virtual environment 
+```code
+python -m venv .venv
+```
