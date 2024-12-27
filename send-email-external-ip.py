@@ -37,9 +37,8 @@ if __name__ == '__main__':
             if last_ip == data["origin"]:
                 print("Email already sent!!!")
                 send_email = False
-    else:
-        with open(FILE_STORE, 'w', encoding='utf-8') as f:
-            f.write(data["origin"])
+    with open(FILE_STORE, 'w', encoding='utf-8') as f:
+        f.write(data["origin"])
     if send_email:
         try:
             server_ssl = smtplib.SMTP_SSL(smtp_host, smtp_port)
